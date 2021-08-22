@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<title>test.ss</title>
+<style type="text/css">
+* { border: 0; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1rem; }
+html { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; }
+table { border-collapse: collapse; border-spacing: 0; }
+body { padding: 1rem; }
+h1, h2, h3, h4 { line-height: 1.25; margin-bottom: 0.5rem; }
+h1 { font-size: 1.296rem; }
+h2 { font-size: 1.215rem; }
+h3 { font-size: 1.138rem; }
+h4 { font-size: 1.067rem; }
+html { font-family: monospace, monospace; font-size: 1rem; }
+p { margin-bottom: 1.25rem; }
+.pc0 { background-color: #111111; color: white; white-space: nowrap; }
+.pc1 { background-color: #607D8B; color: white; white-space: nowrap; }
+.pc2 { background-color: #9C27B0; color: black; white-space: nowrap; }
+.pc3 { background-color: #673AB7; color: white; white-space: nowrap; }
+.pc4 { background-color: #3F51B5; color: white; white-space: nowrap; }
+.pc5 { background-color: #2196F3; color: black; white-space: nowrap; }
+.pc6 { background-color: #00BCD4; color: black; white-space: nowrap; }
+.pc7 { background-color: #4CAF50; color: black; white-space: nowrap; }
+.pc8 { background-color: #CDDC39; color: black; white-space: nowrap; }
+.pc9 { background-color: #FFEB3B; color: black; white-space: nowrap; }
+.pc10 { background-color: #FFC107; color: black; white-space: nowrap; }
+.pc11 { background-color: #FF9800; color: black; white-space: nowrap; }
+.pc12 { background-color: #F44336; color: white; white-space: nowrap; }
+</style>
+</head>
+<body class=pc0>
+<h1 style="margin-bottom: 1rem">test.ss<span style="opacity: 0.5"> on Sun Aug 22 20:34:22 2021</span></h1>
+<table><tr><td style="color: #666666; font-weight: bold; padding-right: 1rem; text-align: right"><pre>
+<span id=line1>1
+</span><span id=line2>2
+</span><span id=line3>3
+</span><span id=line4>4
+</span><span id=line5>5
+</span><span id=line6>6
+</span><span id=line7>7
+</span><span id=line8>8
+</span><span id=line9>9
+</span><span id=line10>10
+</span><span id=line11>11
+</span><span id=line12>12
+</span><span id=line13>13
+</span><span id=line14>14
+</span><span id=line15>15
+</span><span id=line16>16
+</span><span id=line17>17
+</span><span id=line18>18
+</span><span id=line19>19
+</span><span id=line20>20
+</span><span id=line21>21
+</span><span id=line22>22
+</span><span id=line23>23
+</span><span id=line24>24
+</span><span id=line25>25
+</span><span id=line26>26
+</span><span id=line27>27
+</span><span id=line28>28
+</span><span id=line29>29
+</span><span id=line30>30
+</span><span id=line31>31
+</span><span id=line32>32
+</span><span id=line33>33
+</span><span id=line34>34
+</span><span id=line35>35
+</span><span id=line36>36
+</span><span id=line37>37
+</span><span id=line38>38
+</span><span id=line39>39
+</span><span id=line40>40
+</span><span id=line41>41
+</span><span id=line42>42
+</span><span id=line43>43
+</span><span id=line44>44
+</span><span id=line45>45
+</span><span id=line46>46
+</span><span id=line47>47
+</span><span id=line48>48
+</span><span id=line49>49
+</span><span id=line50>50
+</span><span id=line51>51
+</span><span id=line52>52
+</span><span id=line53>53
+</span><span id=line54>54
+</span><span id=line55>55
+</span><span id=line56>56
+</span><span id=line57>57
+</span><span id=line58>58
+</span><span id=line59>59
+</span><span id=line60>60
+</span><span id=line61>61
+</span><span id=line62>62
+</span><span id=line63>63
+</span><span id=line64>64
+</span><span id=line65>65
+</span><span id=line66>66
+</span><span id=line67>67
+</span><span id=line68>68
+</span><span id=line69>69
+</span><span id=line70>70
+</span><span id=line71>71
+</span><span id=line72>72
+</span><span id=line73>73
+</span><span id=line74>74
+</span><span id=line75>75
+</span><span id=line76>76
+</span><span id=line77>77
+</span><span id=line78>78
+</span><span id=line79>79
+</span><span id=line80>80
+</span><span id=line81>81
+</span><span id=line82>82
+</span><span id=line83>83
+</span><span id=line84>84
+</span><span id=line85>85
+</span><span id=line86>86
+</span><span id=line87>87
+</span><span id=line88>88
+</span><span id=line89>89
+</span><span id=line90>90
+</span><span id=line91>91
+</span><span id=line92>92
+</span><span id=line93>93
+</span><span id=line94>94
+</span><span id=line95>95
+</span><span id=line96>96
+</span><span id=line97>97
+</span><span id=line98>98
+</span><span id=line99>99
+</span><span id=line100>100
+</span></pre></td><td><pre>
+<span class=pc2 title="line 1 char 1 count 1">(let ()</span>
+  <span class=pc2 title="line 2 char 3 count 1">(define (vector-ordered? lt? v)</span>
+    <span class=pc2 title="line 3 char 5 count 8">(let ([end </span><span class=pc2 title="line 3 char 16 count 8">(</span><span class=pc2 title="line 3 char 17 count 8">fx-</span><span class=pc2 title="line 3 char 16 count 8"> </span><span class=pc2 title="line 3 char 21 count 8">(</span><span class=pc2 title="line 3 char 22 count 8">vector-length</span><span class=pc2 title="line 3 char 21 count 8"> </span><span class=pc2 title="line 3 char 36 count 8">v</span><span class=pc2 title="line 3 char 21 count 8">)</span><span class=pc2 title="line 3 char 16 count 8"> </span><span class=pc2 title="line 3 char 39 count 8">1</span><span class=pc2 title="line 3 char 16 count 8">)</span><span class=pc2 title="line 3 char 5 count 8">])</span>
+      <span class=pc2 title="line 4 char 7 count 8">(if </span><span class=pc2 title="line 4 char 11 count 8">(</span><span class=pc2 title="line 4 char 12 count 8">fx&gt;</span><span class=pc2 title="line 4 char 11 count 8"> </span><span class=pc2 title="line 4 char 16 count 8">end</span><span class=pc2 title="line 4 char 11 count 8"> </span><span class=pc2 title="line 4 char 20 count 8">0</span><span class=pc2 title="line 4 char 11 count 8">)</span>
+          <span class=pc2 title="line 5 char 11 count 8">(let loop ([i </span><span class=pc2 title="line 5 char 25 count 8">0</span><span class=pc2 title="line 5 char 11 count 8">])</span>
+            <span class=pc4 title="line 6 char 13 count 80,000,000">(cond</span>
+              <span class=pc4 title="line 6 char 13 count 80,000,000">[</span><span class=pc4 title="line 7 char 16 count 80,000,000">(</span><span class=pc4 title="line 7 char 17 count 80,000,000">fx&gt;=</span><span class=pc4 title="line 7 char 16 count 80,000,000"> </span><span class=pc4 title="line 7 char 22 count 80,000,000">i</span><span class=pc4 title="line 7 char 16 count 80,000,000"> </span><span class=pc4 title="line 7 char 24 count 80,000,000">end</span><span class=pc4 title="line 7 char 16 count 80,000,000">)</span><span class=pc4 title="line 6 char 13 count 80,000,000"> </span><span class=pc2 title="line 7 char 29 count 8">#t</span><span class=pc4 title="line 6 char 13 count 80,000,000">]</span>
+              <span class=pc4 title="line 6 char 13 count 80,000,000">[</span><span class=pc4 title="line 8 char 16 count 79,999,992">(</span><span class=pc4 title="line 8 char 17 count 79,999,992">lt?</span><span class=pc4 title="line 8 char 16 count 79,999,992"> </span><span class=pc4 title="line 8 char 21 count 79,999,992">(</span><span class=pc4 title="line 8 char 22 count 79,999,992">vector-ref</span><span class=pc4 title="line 8 char 21 count 79,999,992"> </span><span class=pc4 title="line 8 char 33 count 79,999,992">v</span><span class=pc4 title="line 8 char 21 count 79,999,992"> </span><span class=pc4 title="line 8 char 35 count 79,999,992">i</span><span class=pc4 title="line 8 char 21 count 79,999,992">)</span>
+                    <span class=pc4 title="line 9 char 21 count 79,999,992">(</span><span class=pc4 title="line 9 char 22 count 79,999,992">vector-ref</span><span class=pc4 title="line 9 char 21 count 79,999,992"> </span><span class=pc4 title="line 9 char 33 count 79,999,992">v</span><span class=pc4 title="line 9 char 21 count 79,999,992"> </span><span class=pc4 title="line 9 char 35 count 79,999,992">(</span><span class=pc4 title="line 9 char 36 count 79,999,992">fx+</span><span class=pc4 title="line 9 char 35 count 79,999,992"> </span><span class=pc4 title="line 9 char 40 count 79,999,992">i</span><span class=pc4 title="line 9 char 35 count 79,999,992"> </span><span class=pc4 title="line 9 char 42 count 79,999,992">1</span><span class=pc4 title="line 9 char 35 count 79,999,992">)</span><span class=pc4 title="line 9 char 21 count 79,999,992">)</span><span class=pc4 title="line 8 char 16 count 79,999,992">)</span>
+               <span class=pc4 title="line 10 char 16 count 79,999,992">(</span><span class=pc4 title="line 10 char 17 count 79,999,992">loop</span><span class=pc4 title="line 10 char 16 count 79,999,992"> </span><span class=pc4 title="line 10 char 22 count 79,999,992">(</span><span class=pc4 title="line 10 char 23 count 79,999,992">fx+</span><span class=pc4 title="line 10 char 22 count 79,999,992"> </span><span class=pc4 title="line 10 char 27 count 79,999,992">i</span><span class=pc4 title="line 10 char 22 count 79,999,992"> </span><span class=pc4 title="line 10 char 29 count 79,999,992">1</span><span class=pc4 title="line 10 char 22 count 79,999,992">)</span><span class=pc4 title="line 10 char 16 count 79,999,992">)</span><span class=pc4 title="line 6 char 13 count 80,000,000">]</span>
+              <span class=pc4 title="line 6 char 13 count 80,000,000">[else </span><span class=pc1 title="line 11 char 21 count 0">#f</span><span class=pc4 title="line 6 char 13 count 80,000,000">])</span><span class=pc2 title="line 5 char 11 count 8">)</span>
+          <span class=pc1 title="line 12 char 11 count 0">#t</span><span class=pc2 title="line 4 char 7 count 8">)</span><span class=pc2 title="line 3 char 5 count 8">)</span><span class=pc2 title="line 2 char 3 count 1">)</span>
+
+  <span class=pc2 title="line 14 char 3 count 1">(define (make-random-vector n range)</span>
+    <span class=pc2 title="line 15 char 5 count 2">(let ([v </span><span class=pc2 title="line 15 char 14 count 2">(</span><span class=pc2 title="line 15 char 15 count 2">make-vector</span><span class=pc2 title="line 15 char 14 count 2"> </span><span class=pc2 title="line 15 char 27 count 2">n</span><span class=pc2 title="line 15 char 14 count 2">)</span><span class=pc2 title="line 15 char 5 count 2">])</span>
+      <span class=pc2 title="line 16 char 7 count 2">(let loop ([i </span><span class=pc2 title="line 16 char 21 count 2">0</span><span class=pc2 title="line 16 char 7 count 2">])</span>
+        <span class=pc2 title="line 17 char 9 count 20,000,002">(when </span><span class=pc2 title="line 17 char 15 count 20,000,002">(</span><span class=pc2 title="line 17 char 16 count 20,000,002">fx&lt;</span><span class=pc2 title="line 17 char 15 count 20,000,002"> </span><span class=pc2 title="line 17 char 20 count 20,000,002">i</span><span class=pc2 title="line 17 char 15 count 20,000,002"> </span><span class=pc2 title="line 17 char 22 count 20,000,002">n</span><span class=pc2 title="line 17 char 15 count 20,000,002">)</span>
+              <span class=pc2 title="line 18 char 15 count 20,000,000">(</span><span class=pc2 title="line 18 char 16 count 20,000,000">vector-set!</span><span class=pc2 title="line 18 char 15 count 20,000,000"> </span><span class=pc2 title="line 18 char 28 count 20,000,000">v</span><span class=pc2 title="line 18 char 15 count 20,000,000"> </span><span class=pc2 title="line 18 char 30 count 20,000,000">i</span><span class=pc2 title="line 18 char 15 count 20,000,000"> </span><span class=pc2 title="line 18 char 32 count 20,000,000">(</span><span class=pc2 title="line 18 char 33 count 20,000,000">random</span><span class=pc2 title="line 18 char 32 count 20,000,000"> </span><span class=pc2 title="line 18 char 40 count 20,000,000">range</span><span class=pc2 title="line 18 char 32 count 20,000,000">)</span><span class=pc2 title="line 18 char 15 count 20,000,000">)</span>
+              <span class=pc2 title="line 19 char 15 count 20,000,000">(</span><span class=pc2 title="line 19 char 16 count 20,000,000">loop</span><span class=pc2 title="line 19 char 15 count 20,000,000"> </span><span class=pc2 title="line 19 char 21 count 20,000,000">(</span><span class=pc2 title="line 19 char 22 count 20,000,000">fx+</span><span class=pc2 title="line 19 char 21 count 20,000,000"> </span><span class=pc2 title="line 19 char 26 count 20,000,000">i</span><span class=pc2 title="line 19 char 21 count 20,000,000"> </span><span class=pc2 title="line 19 char 28 count 20,000,000">1</span><span class=pc2 title="line 19 char 21 count 20,000,000">)</span><span class=pc2 title="line 19 char 15 count 20,000,000">)</span><span class=pc2 title="line 17 char 9 count 20,000,002">)</span><span class=pc2 title="line 16 char 7 count 2">)</span>
+      <span class=pc2 title="line 20 char 7 count 2">v</span><span class=pc2 title="line 15 char 5 count 2">)</span><span class=pc2 title="line 14 char 3 count 1">)</span>
+
+  <span class=pc2 title="line 22 char 3 count 1">(define (make-pair-vector m n)</span>
+    <span class=pc2 title="line 23 char 5 count 1">(let ([v </span><span class=pc2 title="line 23 char 14 count 1">(</span><span class=pc2 title="line 23 char 15 count 1">make-vector</span><span class=pc2 title="line 23 char 14 count 1"> </span><span class=pc2 title="line 23 char 27 count 1">n</span><span class=pc2 title="line 23 char 14 count 1">)</span><span class=pc2 title="line 23 char 5 count 1">])</span>
+      <span class=pc2 title="line 24 char 7 count 1">(let loop ([i </span><span class=pc2 title="line 24 char 21 count 1">0</span><span class=pc2 title="line 24 char 7 count 1">])</span>
+        <span class=pc2 title="line 25 char 9 count 7">(if </span><span class=pc2 title="line 25 char 13 count 7">(</span><span class=pc2 title="line 25 char 14 count 7">fx&lt;</span><span class=pc2 title="line 25 char 13 count 7"> </span><span class=pc2 title="line 25 char 18 count 7">i</span><span class=pc2 title="line 25 char 13 count 7"> </span><span class=pc2 title="line 25 char 20 count 7">n</span><span class=pc2 title="line 25 char 13 count 7">)</span>
+            <span class=pc2 title="line 26 char 13 count 6">(let ()</span>
+              <span class=pc2 title="line 27 char 15 count 6">(</span><span class=pc2 title="line 27 char 16 count 6">vector-set!</span><span class=pc2 title="line 27 char 15 count 6"> </span><span class=pc2 title="line 27 char 28 count 6">v</span><span class=pc2 title="line 27 char 15 count 6"> </span><span class=pc2 title="line 27 char 30 count 6">i</span><span class=pc2 title="line 27 char 15 count 6"> </span><span class=pc2 title="line 27 char 32 count 6">(</span><span class=pc2 title="line 27 char 33 count 6">cons</span><span class=pc2 title="line 27 char 32 count 6"> </span><span class=pc2 title="line 27 char 38 count 6">(</span><span class=pc2 title="line 27 char 39 count 6">mod</span><span class=pc2 title="line 27 char 38 count 6"> </span><span class=pc2 title="line 27 char 43 count 6">i</span><span class=pc2 title="line 27 char 38 count 6"> </span><span class=pc2 title="line 27 char 45 count 6">m</span><span class=pc2 title="line 27 char 38 count 6">)</span><span class=pc2 title="line 27 char 32 count 6"> </span><span class=pc2 title="line 27 char 48 count 6">i</span><span class=pc2 title="line 27 char 32 count 6">)</span><span class=pc2 title="line 27 char 15 count 6">)</span>
+              <span class=pc2 title="line 28 char 15 count 6">(</span><span class=pc2 title="line 28 char 16 count 6">loop</span><span class=pc2 title="line 28 char 15 count 6"> </span><span class=pc2 title="line 28 char 21 count 6">(</span><span class=pc2 title="line 28 char 22 count 6">+</span><span class=pc2 title="line 28 char 21 count 6"> </span><span class=pc2 title="line 28 char 24 count 6">i</span><span class=pc2 title="line 28 char 21 count 6"> </span><span class=pc2 title="line 28 char 26 count 6">1</span><span class=pc2 title="line 28 char 21 count 6">)</span><span class=pc2 title="line 28 char 15 count 6">)</span><span class=pc2 title="line 26 char 13 count 6">)</span>
+            <span class=pc2 title="line 29 char 13 count 1">v</span><span class=pc2 title="line 25 char 9 count 7">)</span><span class=pc2 title="line 24 char 7 count 1">)</span><span class=pc2 title="line 23 char 5 count 1">)</span><span class=pc2 title="line 22 char 3 count 1">)</span>
+
+  <span class=pc2 title="line 31 char 3 count 1">(define (uninplace sort!)</span>
+    <span class=pc2 title="line 32 char 5 count 10">(lambda (cmp v)</span>
+      <span class=pc2 title="line 33 char 7 count 16">(let ([v </span><span class=pc2 title="line 33 char 16 count 16">(</span><span class=pc2 title="line 33 char 17 count 16">vector-copy</span><span class=pc2 title="line 33 char 16 count 16"> </span><span class=pc2 title="line 33 char 29 count 16">v</span><span class=pc2 title="line 33 char 16 count 16">)</span><span class=pc2 title="line 33 char 7 count 16">])</span>
+        <span class=pc2 title="line 34 char 9 count 16">(</span><span class=pc2 title="line 34 char 10 count 16">sort!</span><span class=pc2 title="line 34 char 9 count 16"> </span><span class=pc2 title="line 34 char 16 count 16">cmp</span><span class=pc2 title="line 34 char 9 count 16"> </span><span class=pc2 title="line 34 char 20 count 16">v</span><span class=pc2 title="line 34 char 9 count 16">)</span>
+        <span class=pc2 title="line 35 char 9 count 16">v</span><span class=pc2 title="line 33 char 7 count 16">)</span><span class=pc2 title="line 32 char 5 count 10">)</span><span class=pc2 title="line 31 char 3 count 1">)</span>
+
+  <span class=pc2 title="line 1 char 1 count 1">(define-syntax (bench x)</span>
+    <span class=pc2 title="line 38 char 5 count 2">(define (join-name prefix suffix)</span>
+      <span class=pc2 title="line 39 char 7 count 2">(</span><span class=pc2 title="line 39 char 8 count 2">datum-&gt;syntax</span><span class=pc2 title="line 39 char 7 count 2"> #'bench</span>
+        <span class=pc2 title="line 40 char 9 count 2">(</span><span class=pc2 title="line 40 char 10 count 2">string-&gt;symbol</span><span class=pc2 title="line 40 char 9 count 2"> </span><span class=pc2 title="line 40 char 25 count 2">(</span><span class=pc2 title="line 40 char 26 count 2">format</span><span class=pc2 title="line 40 char 25 count 2"> </span><span class=pc2 title="line 40 char 33 count 2">"~a-~a"</span><span class=pc2 title="line 40 char 25 count 2"> </span><span class=pc2 title="line 40 char 41 count 2">prefix</span><span class=pc2 title="line 40 char 25 count 2"> </span><span class=pc2 title="line 40 char 48 count 2">suffix</span><span class=pc2 title="line 40 char 25 count 2">)</span><span class=pc2 title="line 40 char 9 count 2">)</span><span class=pc2 title="line 39 char 7 count 2">)</span><span class=pc2 title="line 38 char 5 count 2">)</span>
+
+    <span class=pc2 title="line 42 char 5 count 2">(define (remove-tail-bang name)</span>
+      <span class=pc2 title="line 43 char 7 count 2">(</span><span class=pc2 title="line 43 char 8 count 2">datum-&gt;syntax</span><span class=pc2 title="line 43 char 7 count 2"> #'bench</span>
+        <span class=pc2 title="line 44 char 9 count 2">(let ([name </span><span class=pc2 title="line 44 char 21 count 2">(</span><span class=pc2 title="line 44 char 22 count 2">symbol-&gt;string</span><span class=pc2 title="line 44 char 21 count 2"> </span><span class=pc2 title="line 44 char 37 count 2">name</span><span class=pc2 title="line 44 char 21 count 2">)</span><span class=pc2 title="line 44 char 9 count 2">])</span>
+          <span class=pc2 title="line 45 char 11 count 2">(</span><span class=pc2 title="line 45 char 12 count 2">string-&gt;symbol</span>
+            <span class=pc2 title="line 46 char 13 count 2">(</span><span class=pc2 title="line 46 char 14 count 2">string-truncate!</span><span class=pc2 title="line 46 char 13 count 2"> </span><span class=pc2 title="line 46 char 31 count 2">name</span><span class=pc2 title="line 46 char 13 count 2"> </span><span class=pc2 title="line 46 char 36 count 2">(</span><span class=pc2 title="line 46 char 37 count 2">-</span><span class=pc2 title="line 46 char 36 count 2"> </span><span class=pc2 title="line 46 char 39 count 2">(</span><span class=pc2 title="line 46 char 40 count 2">string-length</span><span class=pc2 title="line 46 char 39 count 2"> </span><span class=pc2 title="line 46 char 54 count 2">name</span><span class=pc2 title="line 46 char 39 count 2">)</span><span class=pc2 title="line 46 char 36 count 2"> </span><span class=pc2 title="line 46 char 60 count 2">1</span><span class=pc2 title="line 46 char 36 count 2">)</span><span class=pc2 title="line 46 char 13 count 2">)</span><span class=pc2 title="line 45 char 11 count 2">)</span><span class=pc2 title="line 44 char 9 count 2">)</span><span class=pc2 title="line 43 char 7 count 2">)</span><span class=pc2 title="line 42 char 5 count 2">)</span>
+
+    <span class=pc2 title="line 48 char 5 count 2">(syntax-case </span><span class=pc2 title="line 48 char 18 count 2">x</span><span class=pc2 title="line 48 char 5 count 2"> ()</span>
+      <span class=pc2 title="line 48 char 5 count 2">[(_ sort! size range)</span>
+       <span class=pc2 title="line 50 char 8 count 2">(with-syntax</span>
+         <span class=pc2 title="line 50 char 8 count 2">([sort </span><span class=pc2 title="line 51 char 17 count 2">(</span><span class=pc2 title="line 51 char 18 count 2">remove-tail-bang</span><span class=pc2 title="line 51 char 17 count 2"> </span><span class=pc2 title="line 51 char 35 count 2">(datum sort!)</span><span class=pc2 title="line 51 char 17 count 2">)</span><span class=pc2 title="line 50 char 8 count 2">]</span>
+          <span class=pc2 title="line 50 char 8 count 2">[test </span><span class=pc2 title="line 52 char 17 count 2">(</span><span class=pc2 title="line 52 char 18 count 2">join-name</span><span class=pc2 title="line 52 char 17 count 2"> </span><span class=pc2 title="line 52 char 28 count 2">'bench</span><span class=pc2 title="line 52 char 17 count 2"> </span><span class=pc2 title="line 52 char 35 count 2">(datum sort!)</span><span class=pc2 title="line 52 char 17 count 2">)</span><span class=pc2 title="line 50 char 8 count 2">])</span>
+         <span class=pc2 title="line 50 char 8 count 2">#'(let ([v (</span><span class=pc2 title="line 53 char 22 count 2">make-random-vector</span><span class=pc2 title="line 50 char 8 count 2"> size range)])</span>
+             <span class=pc2 title="line 50 char 8 count 2">(define sort (</span><span class=pc2 title="line 54 char 28 count 2">uninplace</span><span class=pc2 title="line 50 char 8 count 2"> sort!))</span>
+             <span class=pc2 title="line 50 char 8 count 2">(define-syntax test/count-cmp</span>
+               <span class=pc2 title="line 50 char 8 count 2">(syntax-rules ()</span>
+                 <span class=pc2 title="line 50 char 8 count 2">[(_ cmp ord)</span>
+                  <span class=pc2 title="line 50 char 8 count 2">(let ([c </span><span class=pc2 title="line 58 char 28 count 8">0</span><span class=pc2 title="line 50 char 8 count 2">])</span>
+                    <span class=pc2 title="line 50 char 8 count 2">(sort (lambda (x y) </span><span class=pc12 title="line 59 char 41 count 750,093,079">(inc! </span><span class=pc12 title="line 59 char 47 count 750,093,079">c</span><span class=pc12 title="line 59 char 41 count 750,093,079">)</span><span class=pc2 title="line 50 char 8 count 2"> (cmp </span><span class=pc12 title="line 59 char 55 count 750,093,079">x</span><span class=pc2 title="line 50 char 8 count 2"> </span><span class=pc12 title="line 59 char 57 count 750,093,079">y</span><span class=pc2 title="line 50 char 8 count 2">)) </span><span class=pc2 title="line 59 char 61 count 8">v</span><span class=pc2 title="line 50 char 8 count 2">)</span>
+                    <span class=pc2 title="line 50 char 8 count 2">(time (sort! cmp </span><span class=pc2 title="line 60 char 38 count 8">v</span><span class=pc2 title="line 50 char 8 count 2">))</span>
+                    <span class=pc2 title="line 50 char 8 count 2">(</span><span class=pc2 title="line 61 char 22 count 8">printf</span><span class=pc2 title="line 50 char 8 count 2"> </span><span class=pc2 title="line 61 char 29 count 8">"comparations: ~a, ordered: ~a\n"</span><span class=pc2 title="line 50 char 8 count 2"> </span><span class=pc2 title="line 61 char 63 count 8">c</span>
+                            <span class=pc2 title="line 50 char 8 count 2">(</span><span class=pc2 title="line 62 char 30 count 8">vector-ordered?</span><span class=pc2 title="line 50 char 8 count 2"> ord </span><span class=pc2 title="line 62 char 50 count 8">v</span><span class=pc2 title="line 50 char 8 count 2">)))]))</span>
+             <span class=pc2 title="line 50 char 8 count 2">(define (test)</span>
+               <span class=pc2 title="line 64 char 16 count 2">(test/count-cmp </span><span class=pc10 title="line 64 char 32 count 461,223,839">&lt;</span><span class=pc2 title="line 64 char 16 count 2">  </span><span class=pc2 title="line 64 char 35 count 2">&lt;=</span><span class=pc2 title="line 64 char 16 count 2">)</span>
+               <span class=pc2 title="line 65 char 16 count 2">(test/count-cmp </span><span class=pc2 title="line 65 char 32 count 20,000,000">&lt;</span><span class=pc2 title="line 65 char 16 count 2">  </span><span class=pc2 title="line 65 char 35 count 2">&lt;=</span><span class=pc2 title="line 65 char 16 count 2">)</span>
+               <span class=pc2 title="line 66 char 16 count 2">(test/count-cmp </span><span class=pc5 title="line 66 char 32 count 134,434,624">&gt;=</span><span class=pc2 title="line 66 char 16 count 2"> </span><span class=pc2 title="line 66 char 35 count 2">&gt;=</span><span class=pc2 title="line 66 char 16 count 2">)</span>
+               <span class=pc2 title="line 67 char 16 count 2">(test/count-cmp </span><span class=pc5 title="line 67 char 32 count 134,434,624">&lt;=</span><span class=pc2 title="line 67 char 16 count 2"> </span><span class=pc2 title="line 67 char 35 count 2">&lt;=</span><span class=pc2 title="line 67 char 16 count 2">)</span><span class=pc2 title="line 50 char 8 count 2">)</span>
+             <span class=pc2 title="line 50 char 8 count 2">(time (test))</span>
+             <span class=pc2 title="line 69 char 14 count 2">(</span><span class=pc2 title="line 69 char 15 count 2">newline</span><span class=pc2 title="line 69 char 14 count 2">)</span><span class=pc2 title="line 50 char 8 count 2">))</span><span class=pc2 title="line 48 char 5 count 2">])</span><span class=pc2 title="line 1 char 1 count 1">)</span>
+
+  <span class=pc2 title="line 71 char 3 count 1">(define (uncurry f)</span>
+    <span class=pc2 title="line 72 char 5 count 5">(lambda (values) </span><span class=pc2 title="line 72 char 22 count 12">(</span><span class=pc2 title="line 72 char 23 count 12">apply</span><span class=pc2 title="line 72 char 22 count 12"> </span><span class=pc2 title="line 72 char 29 count 12">f</span><span class=pc2 title="line 72 char 22 count 12"> </span><span class=pc2 title="line 72 char 31 count 12">values</span><span class=pc2 title="line 72 char 22 count 12">)</span><span class=pc2 title="line 72 char 5 count 5">)</span><span class=pc2 title="line 71 char 3 count 1">)</span>
+
+  <span class=pc2 title="line 1 char 1 count 1">;; stability</span>
+  <span class=pc2 title="line 75 char 3 count 1">(let ([v </span><span class=pc2 title="line 75 char 12 count 1">(</span><span class=pc2 title="line 75 char 13 count 1">make-pair-vector</span><span class=pc2 title="line 75 char 12 count 1"> </span><span class=pc2 title="line 75 char 30 count 1">3</span><span class=pc2 title="line 75 char 12 count 1"> </span><span class=pc2 title="line 75 char 32 count 1">6</span><span class=pc2 title="line 75 char 12 count 1">)</span><span class=pc2 title="line 75 char 3 count 1">])</span>
+    <span class=pc2 title="line 76 char 5 count 1">(</span><span class=pc2 title="line 76 char 6 count 1">printf</span><span class=pc2 title="line 76 char 5 count 1"> </span><span class=pc2 title="line 76 char 13 count 1">"Check stability with v: ~a\n"</span><span class=pc2 title="line 76 char 5 count 1"> </span><span class=pc2 title="line 76 char 44 count 1">v</span><span class=pc2 title="line 76 char 5 count 1">)</span>
+    <span class=pc2 title="line 77 char 5 count 1">(</span><span class=pc2 title="line 77 char 6 count 1">for-each</span>
+      <span class=pc2 title="line 78 char 7 count 1">(</span><span class=pc2 title="line 78 char 8 count 1">uncurry</span>
+        <span class=pc2 title="line 79 char 9 count 1">(lambda (sym cmp)</span>
+          <span class=pc2 title="line 80 char 11 count 4">(let ([cmp </span><span class=pc2 title="line 80 char 22 count 4">(lambda (x y) </span><span class=pc2 title="line 80 char 36 count 87">(</span><span class=pc2 title="line 80 char 37 count 87">cmp</span><span class=pc2 title="line 80 char 36 count 87"> </span><span class=pc2 title="line 80 char 41 count 87">(</span><span class=pc2 title="line 80 char 42 count 87">car</span><span class=pc2 title="line 80 char 41 count 87"> </span><span class=pc2 title="line 80 char 46 count 87">x</span><span class=pc2 title="line 80 char 41 count 87">)</span><span class=pc2 title="line 80 char 36 count 87"> </span><span class=pc2 title="line 80 char 49 count 87">(</span><span class=pc2 title="line 80 char 50 count 87">car</span><span class=pc2 title="line 80 char 49 count 87"> </span><span class=pc2 title="line 80 char 54 count 87">y</span><span class=pc2 title="line 80 char 49 count 87">)</span><span class=pc2 title="line 80 char 36 count 87">)</span><span class=pc2 title="line 80 char 22 count 4">)</span><span class=pc2 title="line 80 char 11 count 4">])</span>
+            <span class=pc2 title="line 81 char 13 count 4">(</span><span class=pc2 title="line 81 char 14 count 4">for-each</span>
+              <span class=pc2 title="line 82 char 15 count 4">(</span><span class=pc2 title="line 82 char 16 count 4">uncurry</span>
+                <span class=pc2 title="line 83 char 17 count 4">(lambda (name sort)</span>
+                  <span class=pc2 title="line 84 char 19 count 8">(</span><span class=pc2 title="line 84 char 20 count 8">printf</span><span class=pc2 title="line 84 char 19 count 8"> </span><span class=pc2 title="line 84 char 27 count 8">"    (~11a ~2a v): ~a\n"</span><span class=pc2 title="line 84 char 19 count 8"> </span><span class=pc2 title="line 84 char 52 count 8">name</span><span class=pc2 title="line 84 char 19 count 8"> </span><span class=pc2 title="line 84 char 57 count 8">sym</span><span class=pc2 title="line 84 char 19 count 8"> </span><span class=pc2 title="line 84 char 61 count 8">(</span><span class=pc2 title="line 84 char 62 count 8">sort</span><span class=pc2 title="line 84 char 61 count 8"> </span><span class=pc2 title="line 84 char 67 count 8">cmp</span><span class=pc2 title="line 84 char 61 count 8"> </span><span class=pc2 title="line 84 char 71 count 8">v</span><span class=pc2 title="line 84 char 61 count 8">)</span><span class=pc2 title="line 84 char 19 count 8">)</span><span class=pc2 title="line 83 char 17 count 4">)</span><span class=pc2 title="line 82 char 15 count 4">)</span>
+              <span class=pc2 title="line 85 char 15 count 4">`([tim-sort    ,</span><span class=pc2 title="line 85 char 31 count 4">(</span><span class=pc2 title="line 85 char 32 count 4">uninplace</span><span class=pc2 title="line 85 char 31 count 4"> </span><span class=pc2 title="line 85 char 42 count 4">tim-sort!</span><span class=pc2 title="line 85 char 31 count 4">)</span><span class=pc2 title="line 85 char 15 count 4">]</span>
+                <span class=pc2 title="line 85 char 15 count 4">[vector-sort ,</span><span class=pc2 title="line 86 char 31 count 4">(</span><span class=pc2 title="line 86 char 32 count 4">uninplace</span><span class=pc2 title="line 86 char 31 count 4"> </span><span class=pc2 title="line 86 char 42 count 4">vector-sort!</span><span class=pc2 title="line 86 char 31 count 4">)</span><span class=pc2 title="line 85 char 15 count 4">])</span><span class=pc2 title="line 81 char 13 count 4">)</span>
+            <span class=pc2 title="line 87 char 13 count 4">(</span><span class=pc2 title="line 87 char 14 count 4">newline</span><span class=pc2 title="line 87 char 13 count 4">)</span><span class=pc2 title="line 80 char 11 count 4">)</span><span class=pc2 title="line 79 char 9 count 1">)</span><span class=pc2 title="line 78 char 7 count 1">)</span>
+      <span class=pc2 title="line 88 char 7 count 1">`([&lt;  ,</span><span class=pc2 title="line 88 char 14 count 1">&lt;</span><span class=pc2 title="line 88 char 7 count 1"> ]</span>
+        <span class=pc2 title="line 88 char 7 count 1">[&gt;  ,</span><span class=pc2 title="line 89 char 14 count 1">&gt;</span><span class=pc2 title="line 88 char 7 count 1"> ]</span>
+        <span class=pc2 title="line 88 char 7 count 1">[&lt;= ,</span><span class=pc2 title="line 90 char 14 count 1">&lt;=</span><span class=pc2 title="line 88 char 7 count 1">]</span>
+        <span class=pc2 title="line 88 char 7 count 1">[&gt;= ,</span><span class=pc2 title="line 91 char 14 count 1">&gt;=</span><span class=pc2 title="line 88 char 7 count 1">])</span><span class=pc2 title="line 77 char 5 count 1">)</span>
+    <span class=pc2 title="line 92 char 5 count 1">(</span><span class=pc2 title="line 92 char 6 count 1">newline</span><span class=pc2 title="line 92 char 5 count 1">)</span><span class=pc2 title="line 75 char 3 count 1">)</span>
+
+  <span class=pc2 title="line 1 char 1 count 1">;; Time &amp; Comparations</span>
+  <span class=pc2 title="line 95 char 3 count 1">(let ([size </span><span class=pc2 title="line 95 char 15 count 1">10000000</span><span class=pc2 title="line 95 char 3 count 1">]</span>
+        <span class=pc2 title="line 95 char 3 count 1">[range </span><span class=pc2 title="line 96 char 16 count 1">1000000</span><span class=pc2 title="line 95 char 3 count 1">])</span>
+    <span class=pc2 title="line 97 char 5 count 1">(</span><span class=pc2 title="line 97 char 6 count 1">printf</span><span class=pc2 title="line 97 char 5 count 1"> </span><span class=pc2 title="line 97 char 13 count 1">"Bench with size=~a, range=~a\n"</span><span class=pc2 title="line 97 char 5 count 1"> </span><span class=pc2 title="line 97 char 46 count 1">size</span><span class=pc2 title="line 97 char 5 count 1"> </span><span class=pc2 title="line 97 char 51 count 1">range</span><span class=pc2 title="line 97 char 5 count 1">)</span>
+    <span class=pc2 title="line 98 char 5 count 1">(bench    </span><span class=pc2 title="line 98 char 15 count 5">tim-sort!</span><span class=pc2 title="line 98 char 5 count 1"> </span><span class=pc2 title="line 98 char 25 count 1">size</span><span class=pc2 title="line 98 char 5 count 1"> </span><span class=pc2 title="line 98 char 30 count 1">range</span><span class=pc2 title="line 98 char 5 count 1">)</span>
+    <span class=pc2 title="line 99 char 5 count 1">(bench </span><span class=pc2 title="line 99 char 12 count 5">vector-sort!</span><span class=pc2 title="line 99 char 5 count 1"> </span><span class=pc2 title="line 99 char 25 count 1">size</span><span class=pc2 title="line 99 char 5 count 1"> </span><span class=pc2 title="line 99 char 30 count 1">range</span><span class=pc2 title="line 99 char 5 count 1">)</span><span class=pc2 title="line 95 char 3 count 1">)</span>
+<span class=pc2 title="line 1 char 1 count 1">)</span>
+</pre></td></tr></table>
+</body>
+</html>
